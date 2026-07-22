@@ -1,1 +1,185 @@
+// ==========================
+// CALCULATRICE ACMPR VISUELLE
+// ==========================
 
+
+const slider = document.getElementById("gramsSlider");
+const gramsValue = document.getElementById("gramsValue");
+const plantResult = document.getElementById("plantResult");
+const plantImage = document.getElementById("plantImage");
+
+let cultureType = "interieur";
+
+
+// Valeurs visuelles (outil informatif seulement)
+const plantEstimates = {
+
+    interieur: {
+        5: "Petite estimation visuelle",
+        10: "Estimation visuelle intermédiaire",
+        15: "Estimation visuelle avancée",
+        20: "Estimation visuelle élevée",
+        25: "Estimation visuelle maximale"
+    },
+
+    exterieur: {
+        5: "Petite estimation visuelle",
+        10: "Estimation visuelle intermédiaire",
+        15: "Estimation visuelle avancée",
+        20: "Estimation visuelle élevée",
+        25: "Estimation visuelle maximale"
+    },
+
+    mixte: {
+        5: "Estimation visuelle partiellement intérieur / extérieur",
+        10: "Estimation visuelle partiellement intérieur / extérieur",
+        15: "Estimation visuelle partiellement intérieur / extérieur",
+        20: "Estimation visuelle partiellement intérieur / extérieur",
+        25: "Estimation visuelle partiellement intérieur / extérieur"
+    }
+
+};
+
+
+
+
+// Mise à jour du curseur
+
+function updateCalculator(){
+
+    const value = slider.value;
+
+    gramsValue.textContent = value;
+
+
+    plantResult.textContent =
+    plantEstimates[cultureType][value];
+
+
+    updatePlantImage(value);
+
+}
+
+
+
+
+// Images plantes
+
+function updatePlantImage(value){
+
+
+    if(value <= 10){
+
+        plantImage.src =
+        "images/plantes/plant-1.png";
+
+    }
+
+
+    else if(value <=20){
+
+        plantImage.src =
+        "images/plantes/plant-2.png";
+
+    }
+
+
+    else{
+
+        plantImage.src =
+        "images/plantes/plant-3.png";
+
+    }
+
+}
+
+
+
+
+if(slider){
+
+slider.addEventListener(
+"input",
+updateCalculator
+);
+
+}
+
+
+
+
+
+// ==========================
+// CHOIX CULTURE
+// ==========================
+
+
+const cultureButtons =
+document.querySelectorAll(".culture-option");
+
+
+cultureButtons.forEach(button=>{
+
+
+button.addEventListener("click",()=>{
+
+
+cultureButtons.forEach(btn=>{
+btn.classList.remove("active");
+});
+
+
+button.classList.add("active");
+
+
+cultureType =
+button.dataset.type;
+
+
+updateCalculator();
+
+
+});
+
+
+});
+
+
+
+
+
+
+// ==========================
+// FAQ ACCORDEON
+// ==========================
+
+
+const faqItems =
+document.querySelectorAll(".faq-item");
+
+
+faqItems.forEach(item=>{
+
+
+const button =
+item.querySelector("button");
+
+
+button.addEventListener("click",()=>{
+
+
+item.classList.toggle("active");
+
+
+});
+
+
+});
+
+
+
+
+
+// Lancement initial
+
+updateCalculator();
