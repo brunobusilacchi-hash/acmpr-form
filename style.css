@@ -232,4 +232,40 @@ width:100%;
 text-align:center;
 }
 
+}.heroImage{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.heroImage img{
+
+width:100%;
+
+border-radius:30px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.heroImage img:hover{
+
+transform:scale(1.02);
+
+}
+
+.heroText{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
 }
