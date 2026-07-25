@@ -232,15 +232,10 @@ width:100%;
 text-align:center;
 }
 
-}.heroImage{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
+.heroImage{
+display:none;
 }
+
 
 .heroImage img{
 
