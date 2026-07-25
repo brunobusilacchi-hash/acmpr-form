@@ -179,4 +179,87 @@ Les décisions médicales demeurent la responsabilité du praticien autorisé.
 
 
 <!-- ===== CALCULATRICE ACMPR ===== -->
-<div id="calculator"></div></section>
+<div id="calculator" class="calc-card">
+
+    <div class="calc-header">
+        <span class="badge">Calculatrice ACMPR</span>
+
+        <h2>Calculez votre capacité de culture</h2>
+
+        <p>
+            Sélectionnez la quantité quotidienne autorisée afin d'obtenir
+            une estimation du nombre maximal de plants permis.
+        </p>
+    </div>
+
+    <div class="gram-selector">
+
+        <button class="gram-btn active" data-g="5">5 g/jour</button>
+
+        <button class="gram-btn" data-g="10">10 g/jour</button>
+
+        <button class="gram-btn" data-g="15">15 g/jour</button>
+
+        <button class="gram-btn" data-g="20">20 g/jour</button>
+
+        <button class="gram-btn" data-g="25">25 g/jour</button>
+
+    </div>
+
+    <div class="results-grid">
+
+        <div class="result-card">
+
+            <div class="result-title">
+                🌿 Intérieur
+            </div>
+
+            <div id="indoorPlants" class="result-number">
+                25
+            </div>
+
+            <div class="result-text">
+                plants maximum
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <div class="result-title">
+                ☀️ Extérieur
+            </div>
+
+            <div id="outdoorPlants" class="result-number">
+                10
+            </div>
+
+            <div class="result-text">
+                plants maximum
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <div class="result-title">
+                🏡 Mixte
+            </div>
+
+            <div id="mixedPlants" class="result-number">
+                17 / 4
+            </div>
+
+            <div class="result-text">
+                intérieur / extérieur
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="calc-note">
+        Estimation informative basée sur les règles ACMPR. Les limites officielles sont celles indiquées sur votre certificat.
+    </div>
+
+</div></section>
