@@ -1,387 +1,235 @@
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-
-font-family:'Poppins',sans-serif;
-
-background:#08110d;
-
-color:white;
-
+font-family:'Inter',sans-serif;
+background:#f4f7f5;
+color:#222;
 overflow-x:hidden;
-
-line-height:1.6;
-
 }
 
-/* HERO */
-
-.hero{
-
-position:relative;
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:40px;
-
-background:
-linear-gradient(rgba(5,15,10,.72),
-rgba(5,15,10,.80)),
-url("images/hero.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-background-attachment:fixed;
-
-}
-
-.overlay{
-
-position:absolute;
-
-inset:0;
-
-background:rgba(0,0,0,.15);
-
-}
-
-.hero-content{
-
-position:relative;
-
-max-width:1000px;
-
-z-index:2;
-
-}
-
-.badge{
-
-display:inline-block;
-
-padding:12px 22px;
-
-background:rgba(255,255,255,.08);
-
-border:1px solid rgba(255,255,255,.15);
-
-backdrop-filter:blur(15px);
-
-border-radius:50px;
-
-font-size:14px;
-
-letter-spacing:2px;
-
-margin-bottom:25px;
-
-}
-
-.hero h1{
-
-font-size:68px;
-
-font-weight:800;
-
-line-height:1.1;
-
-margin-bottom:30px;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-max-width:850px;
-
-margin:auto;
-
-opacity:.92;
-
-margin-bottom:40px;
-
-}
-
-/* Boutons */
-
-.hero-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-.btn-primary{
-
-background:#39c96b;
-
-color:white;
-
-padding:18px 38px;
-
-border-radius:60px;
-
-text-decoration:none;
-
-font-weight:700;
-
-transition:.35s;
-
-box-shadow:0 15px 40px rgba(57,201,107,.30);
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-4px);
-
-background:#2fb45e;
-
-}
-
-.btn-secondary{
-
-padding:18px 38px;
-
-border-radius:60px;
-
-border:2px solid white;
-
-text-decoration:none;
-
-color:white;
-
-transition:.35s;
-
-}
-
-.btn-secondary:hover{
-
-background:white;
-
-color:#111;
-
-}
-
-/* Statistiques */
-
-.hero-stats{
-
-display:flex;
-
-justify-content:center;
-
-gap:60px;
-
-margin-top:80px;
-
-flex-wrap:wrap;
-
-}
-
-.hero-stats h2{
-
-font-size:38px;
-
-font-weight:700;
-
-}
-
-.hero-stats span{
-
-opacity:.75;
-
-font-size:15px;
-
-} /* NAVIGATION */
-
-header{
-
+.background{
 position:fixed;
-
-width:100%;
-
 top:0;
-
 left:0;
-
-z-index:1000;
-
-padding:20px 50px;
-
-transition:.4s;
-
-}
-
-.navbar{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-}
-
-.logo{
-
-font-size:28px;
-
-font-weight:800;
-
-letter-spacing:1px;
-
-}
-
-.navbar ul{
-
-display:flex;
-
-gap:35px;
-
-list-style:none;
-
-}
-
-.navbar a{
-
-color:white;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-.navbar a:hover{
-
-color:#52d67c;
-
-}
-
-.nav-btn{
-
-padding:14px 28px;
-
-background:#39c96b;
-
-border-radius:40px;
-
-font-weight:700;
-
-}
-
-/* Sections */
-
-section{
-
-padding:120px 10%;
-
+width:100%;
+height:100%;
+background:
+linear-gradient(rgba(255,255,255,.78),rgba(255,255,255,.86)),
+url("images/greenhouse.jpg");
+background-size:cover;
+background-position:center;
+z-index:-1;
 }
 
 .container{
-
-max-width:1200px;
-
+width:92%;
+max-width:1250px;
 margin:auto;
-
 }
 
-section h2{
-
-font-size:46px;
-
-margin-bottom:25px;
-
-text-align:center;
-
+header{
+padding:25px 0;
 }
 
-section p{
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-font-size:18px;
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
 
-text-align:center;
+.logoCircle{
+width:58px;
+height:58px;
+border-radius:50%;
+background:#2d7c46;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
 
-opacity:.82;
+.logo h3{
+font-size:22px;
+font-weight:700;
+}
 
-margin-bottom:60px;
+.logo p{
+color:#666;
+font-size:14px;
+}
 
-} /* CARTES */
+.btnTop{
+background:#2d7c46;
+padding:14px 28px;
+border-radius:14px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
 
-.cards{
+.btnTop:hover{
+transform:translateY(-3px);
+background:#236639;
+}
 
+.progressSection{
+margin-top:20px;
+margin-bottom:45px;
+}
+
+.step{
+font-size:14px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:12px;
+color:#2d7c46;
+}
+
+.progressBar{
+height:10px;
+background:#d9e6db;
+border-radius:50px;
+overflow:hidden;
+}
+
+.progress{
+width:9%;
+height:100%;
+background:#2d7c46;
+border-radius:50px;
+}
+
+.heroGrid{
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
+grid-template-columns:1.1fr .9fr;
+gap:35px;
+margin-bottom:70px;
 }
 
 .card{
-
-background:rgba(255,255,255,.06);
-
+background:rgba(255,255,255,.82);
 backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.08);
-
 padding:45px;
-
-border-radius:24px;
-
-transition:.4s;
-
+border-radius:28px;
+box-shadow:0 20px 45px rgba(0,0,0,.08);
 }
 
-.card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 25px 60px rgba(0,0,0,.30);
-
+.badge{
+display:inline-block;
+padding:8px 14px;
+background:#e8f6ed;
+border-radius:999px;
+color:#2d7c46;
+font-size:13px;
+font-weight:700;
+margin-bottom:18px;
 }
 
-.card h3{
+.card h1{
+font-size:48px;
+line-height:1.1;
+margin-bottom:22px;
+}
 
-font-size:28px;
-
-margin-bottom:15px;
-
+.card h2{
+font-size:34px;
+margin-bottom:20px;
 }
 
 .card p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+}
 
-text-align:left;
+.features{
+margin:35px 0;
+display:grid;
+gap:18px;
+}
 
-margin:0;
+.features div{
+background:white;
+padding:18px;
+border-radius:16px;
+font-weight:600;
+box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+.btnGreen{
+display:inline-block;
+background:#2d7c46;
+color:white;
+text-decoration:none;
+padding:18px 34px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+transition:.3s;
+}
+
+.btnGreen:hover{
+transform:translateY(-4px);
+background:#236639;
+}
+
+.small{
+margin-top:18px;
+font-size:14px;
+color:#888;
+}
+
+.infoCard{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.note{
+margin-top:28px;
+padding:20px;
+background:#edf8f0;
+border-left:5px solid #2d7c46;
+border-radius:14px;
+font-weight:600;
+color:#2d7c46;
+}
+
+@media(max-width:950px){
+
+.heroGrid{
+grid-template-columns:1fr;
+}
+
+.card h1{
+font-size:36px;
+}
+
+.card h2{
+font-size:28px;
+}
+
+.nav{
+flex-direction:column;
+gap:20px;
+}
+
+.btnTop{
+width:100%;
+text-align:center;
+}
 
 }
