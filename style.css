@@ -415,5 +415,29 @@ justify-content:center;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
-}  
+}
+
+@media (max-width:900px){
+
+    .calculator-layout{
+        display:block;
+    }
+
+    .gram-selector{
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+        margin-bottom:25px;
+    }
+
+    .results-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gram-btn{
+        width:100%;
+    }
+
+}
 } 
