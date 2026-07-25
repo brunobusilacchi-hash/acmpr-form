@@ -264,3 +264,73 @@ flex-direction:column;
 justify-content:center;
 
 }
+
+/* ===== CALCULATRICE ACMPR ===== */
+
+#calculator{
+    max-width:1200px;
+    margin:70px auto;
+    background:#ffffff;
+    border-radius:32px;
+    padding:45px;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.calc-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:999px;
+    background:#e8f6ef;
+    color:#0b5d3b;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.calc-header h2{
+    font-size:42px;
+    margin:0;
+    color:#173f2e;
+}
+
+.calc-header p{
+    margin-top:15px;
+    color:#666;
+    font-size:18px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.gram-selector{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:45px;
+}
+
+.gram-btn{
+    padding:16px 26px;
+    border-radius:50px;
+    border:2px solid #d7e7dd;
+    background:#fff;
+    cursor:pointer;
+    font-weight:700;
+    transition:.3s;
+}
+
+.gram-btn:hover{
+    transform:translateY(-2px);
+}
+
+.gram-btn.active{
+    background:#0b5d3b;
+    color:#fff;
+    border-color:#0b5d3b;
+}  
