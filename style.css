@@ -441,3 +441,33 @@ justify-content:center;
 
 }
 } 
+/* --- Correction mobile calculatrice --- */
+@media (max-width: 900px) {
+
+  .calculator-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .gram-selector {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .results-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .result-card {
+    width: 100% !important;
+  }
+
+  .gram-btn {
+    width: 100% !important;
+  }
+}
