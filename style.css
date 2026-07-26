@@ -497,4 +497,17 @@ justify-content:center;
 
 .mixed .card-bar{
     background:#3b82f6;
+}.card-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:64px;
+    height:64px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    font-size:30px;
+}
+
+.result-title{
+    margin-top:10px;
 }
