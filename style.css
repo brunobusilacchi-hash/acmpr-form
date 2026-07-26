@@ -516,19 +516,17 @@ justify-content:center;
     margin-top:10px;
 }
 
-/* Couleurs des cartes */
-
 .result-card.indoor{
-    border-top:8px solid #22c55e;
-    background:#f4fff7;
+    border-top:8px solid #22c55e !important;
+    background:#eafaf0 !important;
 }
 
 .result-card.outdoor{
-    border-top:8px solid #f59e0b;
-    background:#fff8ed;
+    border-top:8px solid #f59e0b !important;
+    background:#fff5e6 !important;
 }
 
 .result-card.mixed{
-    border-top:8px solid #3b82f6;
-    background:#f4f8ff;
-}     
+    border-top:8px solid #3b82f6 !important;
+    background:#eef5ff !important;
+}
