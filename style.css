@@ -453,8 +453,9 @@ justify-content:center;
 
   .gram-btn {
     width: 100% !important;
-  }
-}.card-icon{
+}
+}
+.card-icon{
     width:64px;
     height:64px;
     margin:0 auto 18px;
