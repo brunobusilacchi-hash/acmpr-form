@@ -1,11 +1,34 @@
 const plantData = {
-  5:  { indoor: 25, outdoor: 10, mixed: "17 / 4" },
-  10: { indoor: 49, outdoor: 20, mixed: "33 / 8" },
-  15: { indoor: 73, outdoor: 29, mixed: "49 / 12" },
-  20: { indoor: 98, outdoor: 39, mixed: "65 / 16" },
-  25: { indoor: 123, outdoor: 49, mixed: "82 / 20" }
-};
+  5: {
+    indoor: 25,
+    outdoor: 10,
+    mixed: "19 / 5"
+  },
 
+  10: {
+    indoor: 49,
+    outdoor: 19,
+    mixed: "37 / 10"
+  },
+
+  15: {
+    indoor: 73,
+    outdoor: 29,
+    mixed: "55 / 15"
+  },
+
+  20: {
+    indoor: 98,
+    outdoor: 38,
+    mixed: "73 / 19"
+  },
+
+  25: {
+    indoor: 122,
+    outdoor: 48,
+    mixed: "92 / 24"
+  }
+};
 const indoorPlants = document.getElementById("indoorPlants");
 const outdoorPlants = document.getElementById("outdoorPlants");
 const mixedPlants = document.getElementById("mixedPlants");
