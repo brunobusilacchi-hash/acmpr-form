@@ -1,4 +1,4 @@
-const plantData = {
+const plantData = { 
   5: {
     indoor: 25,
     outdoor: 10,
