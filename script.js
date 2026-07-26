@@ -1,4 +1,3 @@
-
 const plantData = {
   5:  { indoor: 25, outdoor: 10, mixed: "17 / 4" },
   10: { indoor: 49, outdoor: 20, mixed: "33 / 8" },
